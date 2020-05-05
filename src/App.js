@@ -1,12 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
+//import "bootstrap/dist/css/bootstrap.css";
+import Routes from "./routes";
 
-import TodoMenu from "./components/TodoMenu/TodoMenu";
 const App = () => {
-  return (
-    <Fragment>
-      <TodoMenu />
-    </Fragment>
-  );
+  return <Routes />;
 };
 
 export default App;

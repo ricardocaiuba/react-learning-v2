@@ -3,7 +3,7 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: path.resolve("./src/index.js"),
-  devtool: webpack.mode == "development" ? "source-map" : "none",
+  devtool: "source-map",
   module: {
     rules: [
       {
@@ -44,5 +44,6 @@ module.exports = {
     contentBase: path.resolve("./public"),
     hot: true,
     port: 3001,
+    historyApiFallback: true,
   },
 };
