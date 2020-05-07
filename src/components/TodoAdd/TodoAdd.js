@@ -15,7 +15,7 @@ const TodoAdd = ({ value, change, textAreaValue, textAreaChange, onClick }) => {
         <textarea
           value={textAreaValue}
           onChange={textAreaChange}
-          placeholder="..."
+          placeholder="........."
         ></textarea>
         <br />
         <div onClick={onClick} name="save" className="button-crud">
